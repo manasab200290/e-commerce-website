@@ -22,3 +22,26 @@ A dynamic full-stack E-commerce website that allows users to browse products, ma
 
 ## 📂 Project Structure
 
+ecommerce-project/
+├── README.md
+├── ecommerce.sql               # SQL file to create and populate the database
+├── backend/                    # Spring Boot backend
+│   ├── src/
+│   │   ├── main/
+│   │   │   ├── java/com/ecommerce/
+│   │   │   │   ├── controller/      # REST Controllers
+│   │   │   │   ├── model/           # Entity classes
+│   │   │   │   ├── repository/      # JpaRepository interfaces
+│   │   │   │   ├── service/         # Business logic
+│   │   │   │   └── EcommerceApplication.java
+│   │   │   └── resources/
+│   │   │       ├── application.properties
+│   │   │       └── static/
+│   │   └── test/                   # Test cases (optional)
+│   └── pom.xml                    # Maven dependencies
+├── frontend/                     # Frontend folder
+│   ├── index.html                # Homepage
+│   ├── styles.css                # Styling
+│   ├── script.js                 # Optional JavaScript
+│   └── assets/                   # Product images, icons etc.
+└── .gitignore                    # Optional for GitHub
